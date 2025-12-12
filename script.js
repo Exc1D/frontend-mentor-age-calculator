@@ -59,7 +59,7 @@ function validate() {
   if (month < 1 || month > 12) {
     monthInput.style.borderColor = "red";
     monthInput.parentElement.querySelector("small").innerText =
-      "What kind of calendar is that?";
+      "Are you an alien?";
     isValid = false;
   }
 
@@ -155,7 +155,7 @@ function handleSubmit(e) {
     animateNumber(dayResult, age.days);
     animateNumber(monthResult, age.months);
     animateNumber(yearResult, age.years);
-    
+
     isCalculated = true;
     submitBtn.classList.add("reset");
   }

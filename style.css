@@ -95,6 +95,10 @@ input::placeholder {
   justify-content: center;
   transition: background-color 0.3s ease;
 }
+.submit_btn:hover,
+.submit_btn.reset:hover {
+  background-color: hsl(259, 100%, 55%);
+}
 
 .submit_btn.reset {
   background-color: var(--light-grey);
