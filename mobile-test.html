@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Test</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .test-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .device-frame {
+            border: 2px solid #333;
+            border-radius: 20px;
+            overflow: hidden;
+            background: #f0f0f0;
+        }
+        .mobile {
+            width: 375px;
+            height: 667px;
+        }
+        .tablet {
+            width: 768px;
+            height: 1024px;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        h3 {
+            text-align: center;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mobile Responsiveness Test</h1>
+    <div class="test-container">
+        <div>
+            <h3>Mobile (375px)</h3>
+            <div class="device-frame mobile">
+                <iframe src="index.html"></iframe>
+            </div>
+        </div>
+        <div>
+            <h3>Tablet (768px)</h3>
+            <div class="device-frame tablet">
+                <iframe src="index.html"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
