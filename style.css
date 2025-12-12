@@ -35,7 +35,8 @@ body {
   flex-direction: column;
   padding: 20px;
   background-color: var(--white);
-  width: 700px;
+  width: 100%;
+  max-width: 700px;
   border-radius: 5px 5px 40% 5px;
 }
 
@@ -104,7 +105,7 @@ input::placeholder {
   background-color: var(--light-grey);
 }
 
-.output h1 {
+.output p {
   font-size: 5rem;
   font-weight: 800;
   font-style: italic;
@@ -135,8 +136,8 @@ footer {
   color: var(--off-white);
 }
 
-footeer a {
-  color: var(--light-grey);
+footer a {
+  color: var(--off-black);
 }
 
 @media screen and (max-width: 600px) {
