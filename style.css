@@ -7,12 +7,14 @@
   --smokey-grey: hsl(0, 1%, 44%);
   --off-black: hsl(0, 0%, 8%);
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 body {
   min-height: 100vh;
   display: flex;
@@ -20,11 +22,13 @@ body {
   justify-content: center;
   background-color: var(--off-white);
 }
+
 .card {
   display: flex;
   flex-direction: column;
   margin: 30px auto;
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -33,22 +37,27 @@ body {
   width: 700px;
   border-radius: 5px 5px 40% 5px;
 }
+
 form {
   display: flex;
   flex-direction: column;
 }
+
 .form_container {
   display: flex;
   gap: 20px;
 }
+
 .block {
   display: flex;
   flex-direction: column;
 }
+
 .block label {
   text-transform: uppercase;
   font-weight: 700;
 }
+
 input {
   width: 150px;
   font-size: 32px;
@@ -58,18 +67,22 @@ input {
   display: flex;
   align-items: center;
 }
+
 input::placeholder {
   font-size: 32px;
   font-weight: 700;
 }
+
 .submit_block {
   display: flex;
   align-items: center;
 }
+
 .submit_block hr {
   width: 100%;
   color: var(--off-white);
 }
+
 .submit_block .submit_btn {
   border-radius: 50%;
   padding: 1rem;
@@ -80,15 +93,18 @@ input::placeholder {
   align-items: center;
   justify-content: center;
 }
+
 .output h1 {
   font-size: 5rem;
   font-weight: 800;
   font-style: italic;
   height: fit-content;
 }
+
 .output span {
   color: var(--purple);
 }
+
 small {
   color: red;
 }
@@ -98,6 +114,7 @@ small {
   text-align: center;
   margin-top: 20px;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
@@ -108,35 +125,43 @@ small {
     max-width: 350px;
     margin: 10px auto;
   }
+
   .container {
     padding: 1.5rem 1rem;
     border-radius: 20px 20px 100px 20px;
   }
+
   .form_container {
     margin-bottom: 3rem;
     gap: 1rem;
   }
+
   .block label {
     font-size: 0.75rem;
     margin-bottom: 0.5rem;
     color: var(--smokey-grey);
   }
+
   input {
     width: 80px;
     font-size: 18px;
     padding: 0.75rem 0.5rem;
     border: 1px solid var(--light-grey);
   }
+
   input::placeholder {
     font-size: 18px;
   }
+
   .submit_block {
     position: relative;
     margin: 2rem 0;
   }
+
   .submit_block hr {
     border: 1px solid var(--light-grey);
   }
+
   .submit_btn {
     position: absolute;
     top: 50%;
@@ -144,31 +169,37 @@ small {
     transform: translate(-50%, -50%);
     padding: 0.75rem;
   }
+
   .output {
     margin-top: 1rem;
   }
+
   .output h1 {
     font-size: 3rem;
     line-height: 1.1;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 320px) {
   .card {
     width: 95%;
     margin: 5px auto;
   }
+
   .container {
     padding: 1rem 0.75rem;
   }
+
   input {
     width: 70px;
     font-size: 16px;
     padding: 0.5rem;
   }
+
   input::placeholder {
     font-size: 16px;
   }
+
   .output h1 {
     font-size: 2.5rem;
   }
