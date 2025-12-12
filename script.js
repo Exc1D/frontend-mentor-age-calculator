@@ -100,6 +100,27 @@ function calculateAge(birthDate) {
   return { years, months, days };
 }
 
+function animateNumber(el, num) {
+  let step = 50;
+  num > 25 && (step = 35);
+  num > 50 && (step = 25);
+  num > 75 && (step = 20);
+  num > 100 && (step = 10);
+  num > 200 && (step = 1);
+
+  let n = 0;
+  if (num === 0) {
+    el.innerHTML = n;
+  } else {
+    let interval = setInterval(() => {
+      n += 1;
+      if (n === num) {
+        clearInterval(interval);
+      }
+      el.innerHTML = n;
+    }, step);
+  }
+}
 function handleSubmit(e) {
   e.preventDefault();
 
